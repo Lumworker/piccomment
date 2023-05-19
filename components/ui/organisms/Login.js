@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { setAuthState, setAuthUser } from "@/store/slices/authSlice";
+import { setAuthState, setAuthUser } from "@/redux/slices/authSlice";
 import Button from "../atoms/Button";
 import Input from "../atoms/Input";
 

@@ -5,7 +5,7 @@ import {
   HeartOutline,
 } from "@/components/assets/Icons";
 import { useSelector } from "react-redux"; // use redux
-import { selectComments } from "@/store/slices/commentSlice";
+import { selectComments } from "@/redux/slices/commentSlice";
 
 export default function Caption({ title }) {
   const commentsState = useSelector(selectComments);
