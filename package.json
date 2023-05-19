@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "release": "release-it -VV — ci — no-git.requireUpstream"
+    "release": "release-it -VV — ci — no-git.requireUpstream",
+    "sonar": "node sonar-project.js",
+    "patch": "release-it patch --ci",
+    "minor": "release-it minor --ci",
+    "major": "release-it major --ci"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
