@@ -24,8 +24,8 @@ export default function Home() {
         {/* Hero Section */}
         <Hero
           imageSrc={`/images/cute-cat.jpg`}
-          imageAlt={`Gojo Cat`}
-          imageTitle={`Catoru Gojo`}
+          imageAlt={`cute boi`}
+          imageTitle={`Pray on cat`}
         />
 
         {/* Comment Section */}

@@ -1,12 +1,12 @@
 export const commentsState = {
   value: [
     {
-      comment: "Gojo looks nice. Excellent work amigo!",
-      username: "Saitama",
+      comment: "หนำใจน่ารักที่สุด",
+      username: "หน้าม้า",
     },
     {
-      comment: "Catoru Sensei! Konnichiwa!",
-      username: "Yuji",
+      comment: "หนำใจน่ารักยิ่งกว่า!",
+      username: "หน้าแมว",
     },
   ],
 };
