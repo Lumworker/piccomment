@@ -1,12 +1,12 @@
 import { Provider } from "react-redux";
-import { wrapper } from "../redux/redux"; //use Redux
+import { wrapper } from "../store/store"; //use Redux
 import "../styles/globals.css";
 
 function MyApp({ Component, ...rest }) {
-  const { redux, props } = wrapper.useWrappedredux(rest); // ดึง reduxตัวแปรมาใช้
+  const { store, props } = wrapper.useWrappedStore(rest); // ดึง reduxตัวแปรมาใช้
   const { pageProps } = props;
   return (
-    <Provider redux={redux}>
+    <Provider store={store}>
       <Component {...pageProps} />
     </Provider>
   );

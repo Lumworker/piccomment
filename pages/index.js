@@ -6,8 +6,8 @@ import NewComment from "@/components/ui/organisms/NewComment";
 import Login from "@/components/ui/organisms/Login";
 import { commentsState } from "@/components/assets/Comments"; // Dump value
 import { useSelector } from "react-redux";
-import { selectComments } from "@/redux/slices/commentSlice";
-import { selectAuthState } from "@/redux/slices/authSlice";
+import { selectComments } from "@/store/slices/commentSlice";
+import { selectAuthState } from "@/store/slices/authSlice";
 export default function Home() {
   const authState = useSelector(selectAuthState); // get authState
   const commentsState = useSelector(selectComments);

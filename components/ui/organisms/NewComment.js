@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from "react-redux"; //updated
-import { selectAuthUser } from "@/redux/slices/authSlice"; // updated
-import { addComment } from "@/redux/slices/commentSlice"; // updated
+import { selectAuthUser } from "@/store/slices/authSlice"; // updated
+import { addComment } from "@/store/slices/commentSlice"; // updated
 import Avatar from "../atoms/Avatar";
 import Button from "../atoms/Button";
 import Input from "../atoms/Input";
-import { setAuthState, setAuthUser } from "@/redux/slices/authSlice";
+import { setAuthState, setAuthUser } from "@/store/slices/authSlice";
 
 export default function NewComment() {
   const dispatch = useDispatch(); // updatedStage
