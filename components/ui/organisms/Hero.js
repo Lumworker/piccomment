@@ -1,5 +1,5 @@
-import Caption from '../molecules/Caption';
-import ImageContent from '../molecules/ImageContent';
+import Caption from "../molecules/Caption";
+import ImageContent from "../molecules/ImageContent";
 
 export default function Hero({ imageSrc, imageAlt, imageTitle }) {
   return (

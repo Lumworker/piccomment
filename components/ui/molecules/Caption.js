@@ -1,9 +1,14 @@
-import { useState } from 'react';
-import { Comments } from '../../assets/Comments';
-import { CommentIcon, HeartFill, HeartOutline } from '../../assets/Icons';
+import { useState } from "react";
+import {
+  CommentIcon,
+  HeartFill,
+  HeartOutline,
+} from "@/components/assets/Icons";
+import { useSelector } from "react-redux"; // use redux
+import { selectComments } from "@/store/slices/commentSlice";
 
 export default function Caption({ title }) {
-  const comments = Comments.value;
+  const commentsState = useSelector(selectComments);
 
   const [likeCount, setLikeCount] = useState(23);
   const [userLike, setUserLike] = useState(false);
@@ -26,7 +31,7 @@ export default function Caption({ title }) {
       {/* Stats */}
       <div className="flex space-x-2 items-center">
         <div className="flex space-x-1">
-          <span>{comments.length}</span> <CommentIcon />
+          <span>{commentsState.length}</span> <CommentIcon />
         </div>
         <div className="flex space-x-1" onClick={handleClick}>
           <span>{likeCount}</span>
