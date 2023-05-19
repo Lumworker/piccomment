@@ -1,5 +1,5 @@
-import Image from 'next/image';
-
+import Image from "next/image";
+import packageJson from "@/package.json";
 export default function Footer() {
   return (
     <footer className="footer">
@@ -9,10 +9,11 @@ export default function Footer() {
         rel="noopener noreferrer"
         className="flex justify-center items-center"
       >
-        <span>Powered by</span>
+        {/* <span>Powered by</span>
         <span className="h-4 ml-2">
           <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </span>
+        </span> */}
+        <span> เวอร์ชัน: {packageJson["version"]}</span>
       </a>
     </footer>
   );
